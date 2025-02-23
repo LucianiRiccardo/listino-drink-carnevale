@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcolici</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column; /* Organizza le immagini in colonna */
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #80304d;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Altezza schermo intero */
+            color: white;
+        }
+
+        /* Titolo sopra tutte le immagini */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 4px;
+            margin-top: 30px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Griglia delle immagini */
+        .drink-item span {
+            position: absolute;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            color: white;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            top: 20%; /* Posiziona il nome sopra l'immagine */
+        }
+
+        .drink-description {
+            position: absolute;
+            font-size: 18px;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            top: 35%; /* Posiziona la descrizione sotto il nome */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .drink-gallery {
+            display: flex;
+            flex-direction: column; /* Disporre le immagini in colonna */
+            width: 100%;
+            height: 100%; /* Copri tutta l'altezza della pagina */
+            overflow-y: auto; /* Scorrimento verticale nel caso ci siano molte immagini */
+        }
+
+        .drink-item {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Ogni immagine copre l'intero schermo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .drink-item img {
+            width: 100%;
+            height: 100%; /* L'immagine occupa tutta l'altezza e la larghezza della pagina */
+            object-fit: cover; /* Assicura che l'immagine riempia lo spazio senza distorcersi */
+        }
+
+        .drink-item span {
+            position: absolute;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            color: white;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        .drink-description {
+            background: rgba(0, 0, 0, 0.3); /* Sfondo semitrasparente */
+        }
+        
+        .drink-description {
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    top: 45%; /* Aumenta il valore di top per spostare la descrizione più in basso */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Drink Alcolici</h1>
+    <div class="drink-gallery">
+        <div class="drink-item">
+            <img src="junglebird.jpg" alt="Jungle Bird">
+            <span>Jungle Bird</span>
+            <div class="drink-description">rum, campari, succo d'ananas, limone, zucchero</div>
+        </div>
+        <div class="drink-item">
+            <img src="japanese.jpeg" alt="Japanese">
+            <span>Japanese</span>
+            <div class="drink-description">gin, rum, tequila, vodka, limone, midori</div>
+        </div>
+        <div class="drink-item">
+            <img src="ginlemon.jpg" alt="Gin Lemon">
+            <span>Gin Lemon</span>
+            <div class="drink-description">gin, limonata</div>
+        </div>
+        <div class="drink-item">
+            <img src="vodkalemon.jpg" alt="Vodka Lemon">
+            <span>Vodka Lemon</span>
+            <div class="drink-description">vodka, limonata</div>
+        </div>
+        <div class="drink-item">
+            <img src="cubalibre.jpg" alt="Cuba Libre">
+            <span>Cuba Libre</span>
+            <div class="drink-description">rum, cocacola, lime</div>
+        </div>
+        <div class="drink-item">
+            <img src="vinorosso.jpg" alt="Vino Rosso">
+            <span>Vino Rosso</span>
+        </div>
+    </div>
+</body>
+</html>
